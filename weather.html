@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Weather App</h1>
+            </div>
+            <div class="search">
+                <input class="inputCity" type="text" placeholder="Enter city name..">
+                <img onclick="getWeather()" src="./images/search-svgrepo-com.png" alt="">
+            </div>
+            <img src="./WeatherImgs/cloudy.png" class="weather-icon" alt="">
+            <h1 class="temp" id="temp">-</h1>
+            <h2 class="city" id="city">-</h2>
+
+            <div class="bottom-part">
+                <div class="col-humidity">
+                    <img src="./WeatherImgs/humidity (2).png" 
+                    alt="">
+                    <div class="humidity-wrapper">
+                        <h3 class="humidity" id="humidity">-</h3>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col-humidity">
+                    <img src="./WeatherImgs/wind.png" alt="">
+                    <div class="wind-wrapper">
+                        <h3 class="wind" id="wind">-</h3>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="applink">Check out my <a href="./index.html">To-do app</a></div>
+        </div>
+    </section>
+
+    <script src="weather.js"></script>
+</body>
+</html>
